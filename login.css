@@ -1,0 +1,241 @@
+/*login*/
+
+section {
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section .imgbxl {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+section .imgbxl:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #f0e3328a, #744601);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+section .imgbxl img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .contentbxl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+section .contentbxl .formbxl {
+  width: 50%;
+}
+
+section .contentbxl .formbxl h2 {
+  color: #5a3e00;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #ffd445;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+section .contentbxl .formbxl .inputbxl {
+  margin-bottom: 20px;
+}
+
+section .contentbxl .formbxl .inputbxl span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #6d5300;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+section .contentbxl .formbxl .inputbxl input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #444444;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #5c5c5c;
+  background: transparent;
+  border-radius: 30px;
+}
+
+section .contentbxl .formbxl .inputbxl input[type="submit"] {
+  background: #000000;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+section .contentbxl .formbxl .inputbxl input[type="submit"]:hover {
+  background: #ffd30f;
+}
+
+section .contentbxl .formbxl .remember {
+  margin-bottom: 10px;
+  color: #635208;
+  font-weight: 400;
+}
+
+section .contentbxl .formbxl .inputbxl p {
+  color: #607d8b;
+}
+
+section .contentbxl .formbxl .inputbxl p {
+  color: #000000;
+}
+
+section .contentbxl .formbxl .inputbxl p {
+  color: #000000;
+}
+
+section .contentbxl .formbxl .inputbxl p a {
+  color: #ccc920;
+}
+
+@media (max-width: 768px) {
+  section .imgbxl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  section .contentbxl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+  }
+
+  section .contentbxl .formbxl {
+    width: 100%;
+    padding: 40px;
+    background: rgb(255 255 255 / 0.9);
+    margin: 50px;
+  }
+  section .contentbxl .formbxl .inputbxl input {
+    width: 90%;
+  }
+}
+
+.socialBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ll i {
+  margin-left: 8px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(250, 250, 250);
+  margin: 15px;
+  line-height: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.text-reg {
+  font-size: small;
+  margin: 10px;
+}
+
+.formGroup {
+  width: 100%;
+  position: relative;
+}
+
+.formGroup input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-indent: 20px;
+  border-radius: 30px;
+  border: 1px solid rgb(167, 165, 165);
+}
+
+.formGroup i {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: grey;
+  font-size: smaller;
+}
+
+input::placeholder {
+  position: relative;
+  left: 20px;
+}
+
+.checkBox {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.btn-reg {
+  background-color: rgb(243, 217, 70);
+  color: white;
+  border-style: none;
+  margin-top: 20px;
+}
+
+.btn-reg2 {
+  background-color: transparent;
+  border: 2px solid black;
+  margin-top: 30px;
+}
+
+.icon:hover {
+  background-color: #99876b;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .formDiv {
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .welcomeDiv {
+    display: none;
+  }
+}
